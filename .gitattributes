@@ -1,2 +1,33 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+// 1. Створіть три змінні, використовуючи var, let, і const. Присвойте їм відповідні значення.
+var variableVar = 10;
+let variableLet = "Привіт";
+const variableConst = true;
+
+// 2. Визначте тип кожної змінної за допомогою оператора typeof і виведіть результат у консоль.
+console.log("Тип variableVar:", typeof variableVar); // number
+console.log("Тип variableLet:", typeof variableLet); // string
+console.log("Тип variableConst:", typeof variableConst); // boolean
+
+// 3. Створіть об'єкт із полями: ім'я, вік, статус студента (булевий тип).
+let person = {
+  name: "Іван",
+  age: 20,
+  isStudent: true
+};
+
+// 4. Додайте до об'єкта нове поле "університет" і виведіть об'єкт у консоль.
+person.university = "КНУ ім. Шевченка";
+console.log("Об'єкт person:", person);
+
+// 5. Виконайте зміну типу змінної, що була оголошена за допомогою let.
+variableLet = 123; // Зміна типу з рядка на число
+console.log("Новий тип variableLet:", typeof variableLet); // number
+
+// 6. Спробуйте змінити значення змінної, оголошеної через const.
+try {
+  variableConst = false; // Це викликає помилку
+} catch (error) {
+  console.log("Помилка при спробі змінити const:", error.message);
+}
